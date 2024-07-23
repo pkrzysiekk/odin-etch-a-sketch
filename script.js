@@ -43,4 +43,4 @@ createButton.addEventListener("click",function(){
     generateGrid(newNumberOfColumns,newNumberOfRows)
 
 })
-generateGrid(60,30)
+generateGrid(16,16)
