@@ -11,5 +11,17 @@ function generateGrid(numberOfRows,numberOfColumns)
             container.appendChild(divBox)
         }
     }
+    subscribeToEvents()
+    
+}
+function subscribeToEvents()
+{
+    const boxes=document.querySelectorAll(".grid")
+    boxes.forEach(function(box){
+        box.addEventListener("mouseover",function(){
+            box.classList.add("hovered")
+        })
+
+    })
 }
 generateGrid(50,32)
