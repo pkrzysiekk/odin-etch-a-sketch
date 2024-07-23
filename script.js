@@ -3,14 +3,14 @@ const createButton=document.querySelector("#create")
 
 function generateGrid(numberOfRows,numberOfColumns)
 {
-    for(i=0;i<numberOfRows;i++)
+    for(i=0;i<numberOfRows*numberOfColumns;i++)
     {
-        for(j=0;j<numberOfColumns;j++)
-        {
-            const divBox=document.createElement("div")
-            divBox.className="grid"
-            container.appendChild(divBox)
-        }
+        const divBox=document.createElement("div")
+        divBox.className="grid"
+        divBox.style.width = `${600 / numberOfColumns }px`;
+        divBox.style.height = `${600 / numberOfColumns }px`;
+        container.appendChild(divBox)
+  
     }
     subscribeToEvents()
     

@@ -14,23 +14,19 @@ body{
 }
 #container{
     display: flex;
-    justify-content: start;
-    flex-direction: column;
     flex-wrap: wrap;
-    flex-grow: 0;
-    align-items: center;
-    max-height: 500px;
-    max-width: 600px;
+    width: 600px;
+    height: 600px;
     background-color: rgb(110, 104, 104);
     
 }
 
 .grid{
-    height: 30px;
-    width: 30px;
-    flex-shrink: 1;
-    display: inline-block;
+  
     background: white;
+    padding: 0;
+    margin: 0;
+    gap: 0;
     /*border: 1px solid black;*/
 }
 .hovered{
