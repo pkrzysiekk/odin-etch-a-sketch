@@ -1,4 +1,5 @@
 const container=document.querySelector("#container")
+const createButton=document.querySelector("#create")
 
 function generateGrid(numberOfRows,numberOfColumns)
 {
@@ -24,4 +25,14 @@ function subscribeToEvents()
 
     })
 }
-generateGrid(50,32)
+createButton.addEventListener("click",function(){
+    let newNumberOfColumns=parseInt(prompt("How many columns of your new grid do you want?"))
+    let newNumberOfRows=parseInt(prompt("How many rows of your new grid do you want?"))
+    while(container.firstChild)
+    {
+        container.firstChild.remove()
+    }
+    generateGrid(newNumberOfColumns,newNumberOfRows)
+
+})
+generateGrid(50,30)

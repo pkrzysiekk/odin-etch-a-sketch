@@ -16,7 +16,7 @@ body{
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    height: 516px;
+    height: 60%;
     
 }
 .grid{
@@ -24,5 +24,8 @@ body{
     width: 16px;
     display: inline-block;
     background: white;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
+}
+.hovered{
+    background-color: black;
 }
