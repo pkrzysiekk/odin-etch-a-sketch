@@ -7,8 +7,10 @@ body{
     height: 100vh;
     background: rgb(12, 109, 109);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 5%;
 }
 #container{
     display: flex;
@@ -28,4 +30,18 @@ body{
 }
 .hovered{
     background-color: black;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#create{
+    font-family: system-ui, sans-serif;
+    font-size: 3.5rem;
+    cursor: pointer;
+    padding: .1em .6em;
+    font-weight: bold;  
+    border: none;
 }
