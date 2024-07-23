@@ -12,3 +12,4 @@ function generateGrid(numberOfRows,numberOfColumns)
         }
     }
 }
+generateGrid(50,32)

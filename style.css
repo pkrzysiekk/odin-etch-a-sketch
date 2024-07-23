@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background: rgb(12, 109, 109);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#container{
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 516px;
+    
+}
+.grid{
+    height: 16px;
+    width: 16px;
+    display: inline-block;
+    background: white;
+    border: 1px solid black;
+}
