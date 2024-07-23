@@ -21,6 +21,14 @@ function subscribeToEvents()
     boxes.forEach(function(box){
         box.addEventListener("mouseover",function(){
             box.classList.add("hovered")
+        let currentOpacity = parseFloat(window.getComputedStyle(box).opacity);
+        currentOpacity -= 0.1;
+
+        if (currentOpacity < 0) {
+            currentOpacity = 0;
+        }
+
+        box.style.opacity = currentOpacity;
         })
 
     })

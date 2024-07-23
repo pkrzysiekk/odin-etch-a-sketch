@@ -20,6 +20,7 @@ body{
     align-items: center;
     height: 60%;
     width: auto;
+    background-color: rgb(110, 104, 104);
     
 }
 .grid{
@@ -30,7 +31,8 @@ body{
     /*border: 1px solid black;*/
 }
 .hovered{
-    background-color: black;
+    background-color: rgb(238, 220, 220);
+    opacity: 1;
 }
 .buttons{
     display: flex;
